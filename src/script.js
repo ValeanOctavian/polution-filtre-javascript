@@ -12,7 +12,7 @@ function solution(array) {
     console.log(total, 'impartit la 2 = ', half);
     let totalFiltre = 0;
 
-    const sortedarr = Object.assign(array.sort((a, b) => a - b));
+    const sortedarr = [...array].sort((a, b) => a - b);
 
     let factoryDetails = [];
     for (let i = 0; i < sortedarr.length; i++) {
